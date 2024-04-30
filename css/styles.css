@@ -68,6 +68,41 @@ header {
     margin: 10px 0;
 }
 
+/* Add this to your existing CSS file */
+.two-column-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items to the top */
+    margin: 0 auto; /* Centers the container */
+    max-width: 1200px; /* Adjust max-width as needed */
+    padding: 20px; /* Add padding as needed */
+}
+
+.left-column {
+    flex-basis: 50%; /* Adjust width of the left column */
+    /* Add any additional styling such as padding or margins as needed */
+}
+
+.right-column {
+    flex-basis: 50%; /* Adjust width of the right column */
+    /* Add any additional styling such as padding or margins as needed */
+}
+
+/* Ensure images within columns don't overflow their container */
+.two-column-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* Stacks the columns into a single column on smaller screens */
+    .left-column,
+    .right-column {
+        flex-basis: 100%;
+    }
+}
+
 
 .logo {
     font-size: 24px;
@@ -90,6 +125,7 @@ nav ul li a {
     text-decoration: none;
     color: #ff340a;
     font-size: 18px;
+    text-transform: capitalize;
 }
 
 /* instagram awesome font css */
