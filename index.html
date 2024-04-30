@@ -1,46 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>𝕷𝖆𝖛𝖊𝖓𝖉𝖊𝖗 𝕿𝖆𝖙𝖟</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
+
+
+
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="projects">
-        <h2>Projects</h2>
+    <script>AOS.init();</script>
+    <header id="header-container"></header>
+
+    <!--  page content below this line -->
+
+
+    <section class="white-background">
+        <h1>h1</h1>
         <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project Title 1</h3>
-            <p>Description of Project 1.</p>
+            <img src="project1.jpg">
+            <h2>h2</h2>
+            <p>paragraph Description of Project 1.</p>
         </div>
         <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project Title 2</h3>
+            <img src="project2.jpg">
+            <h3>h3</h3>
             <p>Description of Project 2.</p>
         </div>
-        <!-- Add more projects as needed -->
     </section>
-    <section id="about">
+
+
+    <section class="grey-background">
         <h2>About Me</h2>
-        <p>This section can contain information about your background, skills, or any other relevant information.</p>
+        <p>Semper eget duis at tellus at. Ullamcorper velit sed ullamcorper morbi tincidunt. Pulvinar elementum integer enim neque volutpat ac. Metus dictum at tempor commodo ullamcorper a lacus. Dapibus ultrices in iaculis nunc sed. Non diam phasellus vestibulum lorem. Nunc sed blandit libero volutpat sed cras ornare arcu dui. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Nunc lobortis mattis aliquam faucibus purus in massa tempor. At risus viverra adipiscing at in tellus. Sodales ut eu sem integer.
+            Eget arcu dictum varius duis at consectetur lorem donec. Vita </p>
     </section>
-    <section id="contact">
+
+
+    <section class="white-background">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
     </section>
-    <footer>
-        <p>Copyright © 2024 Your Name</p>
-    </footer>
+
+    <section class="grey-background">
+    <img src="img/Untitled.png" data-aos="fade-up" data-aos-offset="200">
+    <p data-aos="fade-up" data-aos-delay="300">Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Urna nunc id cursus metus aliquam eleifend mi in. Nunc sed blandit libero volutpat sed cras ornare arcu dui. Orci nulla pellentesque dignissim enim sit amet. At erat pellentesque adipiscing commodo elit at. Integer malesuada nunc vel risus. Sem nulla pharetra diam sit. Libero justo laoreet sit amet cursus sit amet. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Suspendisse sed nisi lacus sed viverra tellus in. Mollis nunc sed id semper. Dolor morbi non arcu risus quis varius quam. Pharetra sit amet aliquam id diam maecenas ultricies mi. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Urna id volutpat lacus laoreet non. Et tortor consequat id porta nibh venenatis. Quis risus sed vulputate odio ut enim blandit volutpat. </p>
+    <p data-aos="fade-up" data-aos-delay="300">Rutrum quisque non tellus orci. Vitae ultricies leo integer malesuada nunc vel. Id interdum velit laoreet id donec ultrices. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit. Dignissim diam quis enim lobortis scelerisque fermentum dui. Pretium fusce id velit ut tortor pretium viverra suspendisse. Nullam non nisi est sit amet. Ultrices in iaculis nunc sed. Quis blandit turpis cursus in hac habitasse platea. Nunc sed id semper risus in hendrerit gravida. Lacus viverra vitae congue eu consequat ac. Risus feugiat in ante metus dictum at tempor commodo ullamcorper. Amet nulla facilisi morbi tempus iaculis urna id volutpat. A diam maecenas sed enim ut. Integer quis auctor elit sed vulputate. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Dis parturient montes nascetur ridiculus. </p>
+    </section>
+
+    <section class="white-background">
+    <footer id="footer-container"></footer>
+    </section>
+
+    <!-- Scripts should be loaded at the end of the body for better performance -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="scripts.js"></script>
+    <!-- header call -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading the header:', error));
+    </script>
+    <!-- footer call -->
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading the footer:', error));
+    </script>
+
+
 </body>
 </html>

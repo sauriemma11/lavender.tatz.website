@@ -1,0 +1,105 @@
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 100px;
+    color: #ff340a;
+    background: #f2f2f2;
+    padding-bottom: 70px; /* Adjust based on the height of your footer */
+    font-size: 22px;
+}
+
+
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 27px;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: -1px;
+
+}
+
+html, body {
+    overscroll-behavior: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*color: #ff340a;*/
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+    background-color: #f2f2f2F0; /* Slightly transparent white using hex */
+    z-index: 10; /* Keeps the header above other content */
+
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.white-background {
+    background-color: #f2f2f2; /* White background */
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.grey-background {
+    background-color: #E4E4E4; /* Light grey background */
+    padding: 20px;
+    margin: 10px 0;
+}
+
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #ff340a; /* orange */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+/*navigation bar link*/
+nav ul li a {
+    text-decoration: none;
+    color: #ff340a;
+    font-size: 18px;
+}
+
+/* instagram awesome font css */
+.fab.fa-instagram {
+    font-size: 29px;
+    color: #ff340a;
+}
+
+.fab.fa-github-square {
+    font-size: 29px;
+    color: #ff340a; /* Instagram’s brand color */
+    /* Add any other styles such as hover effects */
+}
